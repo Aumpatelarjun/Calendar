@@ -1,0 +1,106 @@
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#currentMonth{
+    text-align: center;
+}
+.calendar-table th,
+.calendar-table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+.calendar-header{
+    display: flex;
+    align-items: center;
+    margin-left: 580px;
+}
+
+
+.calendar-table td {
+    cursor: pointer;
+    text-align: center;
+    width: 40px; /* Set the width of the cells */
+    height: 90px; /* Set the height of the cells */
+    line-height: 40px; /* Center text vertically */
+    border: 2px solid #ccc; /* Add a border */
+    background-color: #f0f0f0; /* Background color */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column; 
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1  ! important  ;
+}
+
+button{
+    font-size: 12px; /* Set the font size for the buttons */
+    padding: 5px 10px; /* Adjust padding to make buttons smaller */
+    margin: 10px;
+}
+
+.side {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1 ;
+}
+
+.side-content {
+    display: flex;
+    flex-direction: column; 
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    height: 696px;
+    width: 350px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.calendar-table th {
+    background-color: #eee;
+}
+
+.today {
+    background-color: yellow;
+}
+
